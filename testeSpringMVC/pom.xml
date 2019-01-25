@@ -12,10 +12,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
-    <dependency>
+<dependency>
         <groupId>org.springframework</groupId>
-        <artifactId>spring-webmvc</artifactId>
-        <version>4.1.0.RELEASE</version>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.1.4.RELEASE</version>
     </dependency>
     <dependency>
         <groupId>org.apache.tomcat</groupId>
@@ -74,6 +74,36 @@
         <version>1.2.16</version>
         <scope>runtime</scope>
     </dependency>
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-entitymanager</artifactId>
+    <version>5.4.1.Final</version>
+</dependency>
+<dependency>
+   <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.2.17.Final</version>
+</dependency>
+<dependency>
+    <groupId>org.hibernate.javax.persistence</groupId>
+    <artifactId>hibernate-jpa-2.1-api</artifactId>
+    <version>1.0.0.Final</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>5.1.4.RELEASE</version>
+</dependency>
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.15</version>
+</dependency>
+<dependency>
+    <groupId>org.mariadb.jdbc</groupId>
+    <artifactId>mariadb-java-client</artifactId>
+    <version>2.3.0</version>
+</dependency>
 </dependencies>
   <build>
     <finalName>testeSpringMVC</finalName>

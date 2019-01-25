@@ -1,10 +1,22 @@
 package br.com.renantorres.dominio;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+//Anotação para transformar as classes modelos como entidades do banco de dados
+@Entity
 public class Produto {
 	
+	//Anotação para atribuir um id automaticamente e incremental0
+	//o Hibernate obriga que toda entidade precisa de um id
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
 	private String titulo;
 	private String descricao;
-	private int numeroPags;
+	private int paginas;
 	
 	
 	public String getTitulo() {
@@ -19,15 +31,21 @@ public class Produto {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public int getNumeroPags() {
-		return numeroPags;
-	}
-	public void setNumeroPags(int numeroPags) {
-		this.numeroPags = numeroPags;
-	}
 
 	 @Override
 	    public String toString() {
-	        return "Produto [titulo=" + titulo + ", descricao=" + descricao + ", paginas=" + numeroPags + "]";
+	        return "Produto [titulo=" + titulo + ", descricao=" + descricao + ", paginas=" + paginas + "]";
 	    }
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getPaginas() {
+		return paginas;
+	}
+	public void setPaginas(int paginas) {
+		this.paginas = paginas;
+	}
 }
