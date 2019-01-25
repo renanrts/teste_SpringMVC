@@ -7,7 +7,7 @@
     <title>Livros de Java, Android, iPhone, PHP, Ruby e muito mais - Casa do Código</title>
 </head>
 <body>
-    <form action="/testeSpringMVC/produtos" method="POST">
+    <form action="/produtos" method="POST">
         <div>
             <label>Título</label>
             <input type="text" name="titulo" />
