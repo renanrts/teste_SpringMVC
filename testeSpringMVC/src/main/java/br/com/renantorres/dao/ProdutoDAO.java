@@ -1,5 +1,7 @@
 package br.com.renantorres.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -22,4 +24,9 @@ public class ProdutoDAO {
     public void gravar(Produto produto) {
         manager.persist(produto);
     }
+
+	public List<Produto> listar() {
+	
+		return manager.createQuery("select p from Produto p", Produto.class).getResultList();
+	}
 }
