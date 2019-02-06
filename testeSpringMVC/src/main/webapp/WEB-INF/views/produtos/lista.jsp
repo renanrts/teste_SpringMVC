@@ -12,6 +12,9 @@
 <body>
    
    <h1>Lista de Produtos</h1>
+   
+   <div>${sucesso }</div>
+   
    <table>
    	<tr>
    		<td>Título</td>
@@ -22,9 +25,9 @@
    	
    	
    	<tr>
-   		<td>${produto.titulo }"</td>
-   		<td>${produto.descricao }"</td>
-   		<td>${produto.paginas }"</td>
+   		<td>${produto.titulo }</td>
+   		<td>${produto.descricao }</td>
+   		<td>${produto.paginas }</td>
    	</tr>
    	</c:forEach>
    
